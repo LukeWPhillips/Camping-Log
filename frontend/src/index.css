@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Lato:wght@300&family=League+Spartan:wght@200&family=Roboto:wght@100&family=Rubik:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Lato:wght@300&family=League+Spartan:wght@200&family=Roboto:wght@100&family=Rubik:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+
+body {
+  font-family: Rubik, sans-serif;
+
+  color: #000;
+  font-size: larger;
+
+}
+
+.home-page {
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10rem;
+  padding-top: 50px;
+  font-size: 50px;
+
+}
+
+.homeImage {
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  transform: translateZ(0);
+  width: 30rem;
+  height: 20rem;
+  opacity: 1;
+  mix-blend-mode: darken;
+  /* border: black solid 2px; */
+
+}
+
+@media (min-width: 700px) {
+  .homeImage {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-header, .homeImage {
+    font-size: 15px;
+
+  }
+
+  .homeImage {
+    width: 80%;
+    height: 20rem;
+    margin-top: 200px;
+
+  }
+
+  .home-page {
+    height: 100vh;
+  }
+}
+
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+@media (max-width: 700px) {
+  .btn-container {
+    flex-direction: column;
+    width: 80%;
+
+  }
+
+  .primary-button {
+    margin-top: 1rem;
+    color: #e5e5e5;
+  }
+}
+
+
+
+.primary-button {
+  cursor: pointer;
+  background-color: black;
+  border-bottom-right-radius: 20px;
+  padding: 0.7rem 2rem;
+  margin: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  /* box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .7); */
+}
+
+.primary-button:hover {
+
+  transition: 0.3s;
+  opacity: 70%;
+}
+
+
+
+.forgotPasswordLink {
+  cursor: pointer;
+  color: #00cc66;
+  font-weight: 600;
+  text-align: right;
+  text-decoration: none;
+}
+
+.forgotPasswordLink:hover {
+  text-decoration: underline;
+}
+
+
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 15px;
+  width: 100%;
+  height: 105px;
+  background-color: #2a9d8f;
+  position: fixed;
+  margin: -70px auto;
+  z-index: 100;
+
+
+
+
+
+}
+
+
+.logo-container {
+  position: absolute;
+  top: -8px;
+  left: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#logo {
+
+
+  image-rendering: auto;
+  /* image-rendering: crisp-edges; */
+  transform: translateZ(0);
+  width: 15rem;
+  height: 5rem;
+  mix-blend-mode: darken;
+  /* border: black solid 2px; */
+}
+
+.logo-name {
+
+  /* background-color: #e5e5e5; */
+  margin-left: 20px;
+  width: 200px;
+  font-size: 30px;
+  margin-top: -15px;
+}
+
+@media (max-width: 700px) {
+  .logo-name {
+    font-size: 20px;
+  }
+
+  #logo {
+    margin-left: -50px;
+    margin-top: 20px;
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .menu-item {
+    font-size: 2px;
+  }
+
+  #item {
+    font-size: 15px;
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: #000; */
+  width: 70%;
+  padding-left: 50px;
+
+
+}
+
+.menu-item {
+  cursor: pointer;
+  color: #fefefe;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 2rem;
+
+
+}
+
+.menu-item:hover {
+  color: #00cc66;
+
+}
+
+
+.campsitelisting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  list-style-type: none;
+  width: 90%;
+
+
+}
+
+.campsiteLink {
+  display: contents;
+
+}
+
+#campsiteImg {
+  width: 90%;
+  height: 150px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+@media (min-width: 1024px) {
+  .campsiteImg {
+    width: 70%;
+    height: 300px;
+  }
+}
+
+.campsiteDetails {
+  height: 200px;
+  width: 90%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  /* background-color: #00cc66; */
+
+
+
+}
+
+@media (min-width: 1024px) {
+  .campsiteDetails {
+    width: 79%;
+  }
+}
+
+.campsiteLocation {
+  margin-top: -20px;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 3px;
+  color: #8a2be2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.campsiteName {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* #rating {
+  margin-top: -20px;
+} */
+
+.campsiteRating {
+
+  color: #00cc66;
+  margin-bottom: 5px;
+  margin-top: 2px;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+
+
+
+.rating {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.main {
+  display: flex;
+  background-color: #fefefe;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 70px;
+  margin-left: -10px;
+  margin-right: -10px;
+
+
+}
+
+.edit {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #00cc66;
+  border: none;
+  opacity: 5;
+  font-size: 20px;
+}
+
+.add {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #00cc66;
+  border: none;
+  opacity: 5;
+  font-size: 20px;
+}
+
+.edit:hover {
+  opacity: 5;
+}
+
+
+
+
+
+
+
+/* modal  */
+
+
+.modal {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  right: 100px;
+  bottom: 100px;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: black solid 2px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fefefe;
+  border: none;
+  font-size: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  margin-top: 4rem;
+  padding: 10px;
+}
+
+.header h2 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.password-input,
+.email-input,
+.name-input {
+  box-shadow: rgba(0, 0, 0, 0.11);
+  border: none;
+  background: #faedcd;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 90%;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+
+}
+
+/* profile */
+
+
+
+.campsiteImg {
+  width: 80%;
+}
+
+.profile-header {
+  margin-top: 10rem;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 5px;
+}
+
+
+
+/* create FORM  */
+
+
+.create-h1 {
+  margin-top: 150px;
+}
+
+.formLabel {
+  font-weight: 1000;
+  margin-top: 1rem;
+  display: block;
+  font-size: 20px;
+  padding: 20px 10px;
+  margin-left: 1rem;
+}
+
+.create-input {
+  box-shadow: rgba(0, 0, 0, 0.11);
+  border: none;
+  background: #fefefe;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 50%;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 10px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.formButton {
+  background-color: white;
+  color: black;
+  border: none;
+  margin-left: 20px;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px black solid;
+}
+
+.formButton:active {
+  background-color: #00cc66;
+  color: white;
+}
+
+
+
+
+
+.create-input-notes {
+  box-shadow: rgba(0, 0, 0, 0.11);
+  border: none;
+  background-color: #e5e5e5;
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: 50%;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 10px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+
+.formInputFile {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.imagesInfo {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.formInputFile::-webkit-file-upload-button {
+  cursor: pointer;
+  background-color: #00cc66;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+#stars {
+  margin-left: 20px;
+}
+
+.card {
+  font-size: 10px;
+}
+
+
+/* campsite page */
+
+/* <div className="image-container"></div>
+
+        <div className="listingDetails">
+          <p className="listingName"></p>
+          <p className="listingLocation"></p>
+          <p className="listingRating"></p>
+
+          <p className="listingLocationTitle">Location</p>
+
+          <div className="notes-container"></div> */
+
+
+.main-campsite {
+  margin-top: 70px;
+
+
+}
+
+.campsite-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  max-height: 500px;
+
+
+  /* margin-left: -10px; */
+
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1300px) {
+  .img {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    border-radius: 3px;
+    border: 0.5px solid black;
+  }
+}
+
+.listingDetails {
+  position: relative;
+  top: 30rem;
+  margin-left: 20px;
+  margin-bottom: 500px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .listingLocation {
+    margin-right: 20px;
+  }
+}
+
+.listingName {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #8a2be2;
+}
+
+.listingLocation {
+  font-size: 3rem;
+  margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+
+}
+
+.notes-container {
+  padding: 5px;
+  border-radius: 3px;
+  width: 50%;
+  height: 5rem;
+  background-color: #e5e5e5;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+
+}
+
+.listingRating {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  height: 15rem;
+  background-color: #fefefe;
+  margin-top: 2rem;
+
+}
+
+.delete {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #00cc66;
+  border: none;
+  opacity: 5;
+  font-size: 20px;
+}
+
+.footer-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  background: inherit;
+  margin-bottom: 0;
+  font-size: 10px;
+  color: #001524;
+  height: 4rem;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+
+}
