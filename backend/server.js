@@ -18,12 +18,6 @@ app.use(express.urlencoded({ limit: "50mb", extended: false }));
 
 // test get request in postman
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Camping Log App");
-});
-
-// Routes -
-
 // connected to routes file
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/users/campsites", require("./routes/campsiteRoutes"));
