@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { GrClose } from "react-icons/gr";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import UserContext from "../context/UserContext";
 import axios from "axios";
@@ -88,9 +88,7 @@ function LoginModal(props, user) {
           onChange={onChange}
           required
         />
-        <Link to="/forgot-password" className="forgotPasswordLink">
-          Forgot Password
-        </Link>
+
         <div className="btn-container">
           <button className="primary-button">Login</button>
         </div>

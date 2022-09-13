@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import NewCampsite from "./pages/NewCampsite";
 import Edit from "./pages/Edit";
 import Footer from "./components/Footer";
-import ForgotPassword from "./pages/ForgotPassword";
+
 import { UserProvider } from "./context/UserContext";
 import { ToastContainer } from "react-toastify";
 
@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/forgotpassword" element={<ForgotPassword />} />
+
           <Route path="/newcampsite" element={<NewCampsite />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/campsites" element={<Campsite />} />
