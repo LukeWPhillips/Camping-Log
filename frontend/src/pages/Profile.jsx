@@ -50,7 +50,7 @@ function Profile() {
       toast.info("You must be logged in to create a campsite");
       navigate("/profile");
     } else {
-      navigate("/newcampsite");
+      navigate("api/newcampsite");
     }
   };
 
