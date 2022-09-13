@@ -68,7 +68,7 @@ function NewCampsite() {
     e.preventDefault();
 
     try {
-      const res = axios.post(`http://localhost:5000/api/users/campsites`, {
+      const res = axios.post(`/users/campsites`, {
         id: id,
         name: name,
         location: location,

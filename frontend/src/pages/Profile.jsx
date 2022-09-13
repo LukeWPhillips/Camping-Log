@@ -33,7 +33,7 @@ function Profile() {
     setLoading(true);
     const getData = async (token) => {
       try {
-        const res = await axios.get(`/api/users/campsites`);
+        const res = await axios.get(`/users/campsites`);
 
         await setCampsites({ data: res.data });
         setLoading(false);
@@ -41,8 +41,6 @@ function Profile() {
         console.log(error);
         setError(error.response.data);
       }
-      // const image = campsites?.data?.map((m) => m.images);
-      // await setImages(image);
     };
     getData();
   }, [setCampsites, setIsLoggedIn, setUser]);
