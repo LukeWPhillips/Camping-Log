@@ -33,7 +33,7 @@ function Profile() {
     setLoading(true);
     const getData = async (token) => {
       try {
-        const res = await axios.get(`/users/campsites`);
+        const res = await axios.get(`/api/users/campsites`);
 
         await setCampsites({ data: res.data });
         setLoading(false);
@@ -50,7 +50,7 @@ function Profile() {
       toast.info("You must be logged in to create a campsite");
       navigate("/profile");
     } else {
-      navigate("api/newcampsite");
+      navigate("/newcampsite");
     }
   };
 

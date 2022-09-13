@@ -31,7 +31,7 @@ function RegisterModal(props) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`api/users`, {
+      const res = await fetch(`/api/users`, {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
