@@ -30,6 +30,7 @@ function LoginModal(props, user) {
     }));
   };
 
+  // add localhost for it  to work in development http://localhost:5000
   const submitHandler = async (e) => {
     e.preventDefault();
 

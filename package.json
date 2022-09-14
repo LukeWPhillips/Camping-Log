@@ -1,8 +1,12 @@
 {
+
+ 
+
   "name": "camping-log",
   "version": "1.0.0",
   "description": "Camping-app",
   "main": "server.js",
+ 
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",

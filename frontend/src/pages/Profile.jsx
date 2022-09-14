@@ -30,6 +30,8 @@ function Profile() {
       setIsLoggedIn(true);
     }
 
+    // add local host to work in development http://localhost:5000
+
     setLoading(true);
     const getData = async (token) => {
       try {

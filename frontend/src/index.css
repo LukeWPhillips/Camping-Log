@@ -19,6 +19,8 @@ body {
 
 }
 
+/* HOMEPAGE */
+
 .home-page {
   height: 100%;
   width: 100%;
@@ -128,19 +130,9 @@ body {
 
 
 
-.forgotPasswordLink {
-  cursor: pointer;
-  color: #00cc66;
-  font-weight: 600;
-  text-align: right;
-  text-decoration: none;
-}
-
-.forgotPasswordLink:hover {
-  text-decoration: underline;
-}
 
 
+/* NAVBAR */
 
 .nav-container {
   display: flex;
@@ -242,6 +234,26 @@ body {
 }
 
 
+/* CAMPSITES */
+
+.campsiteImg {
+  width: 80%;
+}
+
+.profile-header {
+  margin-top: 10rem;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 5px;
+}
+
 .campsitelisting {
   display: flex;
   justify-content: space-between;
@@ -321,9 +333,7 @@ body {
 
 }
 
-/* #rating {
-  margin-top: -20px;
-} */
+
 
 .campsiteRating {
 
@@ -395,7 +405,7 @@ body {
 
 
 
-/* modal  */
+/* MODAL  */
 
 
 .modal {
@@ -480,31 +490,10 @@ body {
 
 }
 
-/* profile */
 
 
 
-.campsiteImg {
-  width: 80%;
-}
-
-.profile-header {
-  margin-top: 10rem;
-}
-
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icons {
-  margin-top: 5px;
-}
-
-
-
-/* create FORM  */
+/* ADD CAMPSITE FORM  */
 
 
 .create-h1 {
@@ -553,7 +542,7 @@ body {
 }
 
 
-
+/* VIEW CAMPSITE  EDIT/DELETE */
 
 
 .create-input-notes {
@@ -609,18 +598,7 @@ body {
 }
 
 
-/* campsite page */
 
-/* <div className="image-container"></div>
-
-        <div className="listingDetails">
-          <p className="listingName"></p>
-          <p className="listingLocation"></p>
-          <p className="listingRating"></p>
-
-          <p className="listingLocationTitle">Location</p>
-
-          <div className="notes-container"></div> */
 
 
 .main-campsite {
@@ -628,6 +606,13 @@ body {
 
 
 }
+
+/* CAMPSITE VIEW */
+
+
+
+
+
 
 .campsite-img {
   display: flex;
@@ -705,16 +690,7 @@ body {
 
 }
 
-.map-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 98%;
-  height: 15rem;
-  background-color: #fefefe;
-  margin-top: 2rem;
 
-}
 
 .delete {
   cursor: pointer;
