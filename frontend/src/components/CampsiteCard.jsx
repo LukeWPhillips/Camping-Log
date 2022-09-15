@@ -10,8 +10,6 @@ import { Cloudinary } from "@cloudinary/url-gen";
 import UserContext from "../context/UserContext";
 
 function CampsiteCard({ campsite }) {
-  // const { images } = useContext(UserContext);
-
   const { setListing } = useContext(UserContext);
 
   const onClick = (e) => {
