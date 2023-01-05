@@ -69,20 +69,23 @@ function Edit() {
     e.preventDefault();
 
     try {
-      const res = await axios.put(`/api/users/campsites/${listing._id}`, {
-        name: name,
-        location: location,
-        notes: notes,
-        showers: showers,
-        rating: rating,
-        images: images,
-        dogs: dogs,
-        fires: fires,
+      const res = await axios.put(
+        `http://localhost:5000/api/users/campsites/${listing._id}`,
+        {
+          name: name,
+          location: location,
+          notes: notes,
+          showers: showers,
+          rating: rating,
+          images: images,
+          dogs: dogs,
+          fires: fires,
 
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       console.log(res);
       toast.success("Campsite updated!");
       console.log(res.data);

@@ -28,11 +28,14 @@ function Campsite() {
   const onClick = async () => {
     if (isLoggedIn === true && user._id === listing.id) {
       try {
-        const res = await axios.delete(`/api/users/campsites/${listing._id}`, {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const res = await axios.delete(
+          `http://localhost:5000/api/users/campsites/${listing._id}`,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
         console.log(res);
         toast.info("Deleted!");

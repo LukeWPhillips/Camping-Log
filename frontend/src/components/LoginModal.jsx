@@ -35,10 +35,13 @@ function LoginModal(props, user) {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`/api/users/login`, {
-        email: email,
-        password: password,
-      });
+      const response = await axios.post(
+        `http://localhost:5000/api/users/login`,
+        {
+          email: email,
+          password: password,
+        }
+      );
 
       if (response.status === 401) {
         toast.error("Invalid username or password");

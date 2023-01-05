@@ -35,7 +35,9 @@ function Profile() {
     setLoading(true);
     const getData = async (token) => {
       try {
-        const res = await axios.get(`/api/users/campsites`);
+        const res = await axios.get(
+          `http://localhost:5000/api/users/campsites`
+        );
 
         await setCampsites({ data: res.data });
         setLoading(false);
@@ -95,7 +97,7 @@ function Profile() {
         </Grid>
       </div>
 
-      <button className="add" onClick={onAdd}>
+      <button title="Add New Campsite" className="add" onClick={onAdd}>
         <GrAdd />
       </button>
     </>

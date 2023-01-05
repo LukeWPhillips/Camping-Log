@@ -68,7 +68,7 @@ function NewCampsite() {
     e.preventDefault();
 
     try {
-      const res = axios.post(`/api/users/campsites`, {
+      const res = axios.post(`http://localhost:5000/api/users/campsites`, {
         id: id,
         name: name,
         location: location,
@@ -159,6 +159,7 @@ function NewCampsite() {
             max="6"
             accept=".jpg,.png,.jpeg"
             multiple={true}
+            required
           />
 
           <div className="formButtons">
