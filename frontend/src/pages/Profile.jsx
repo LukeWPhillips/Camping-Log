@@ -36,7 +36,7 @@ function Profile() {
     const getData = async (token) => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/users/campsites`
+          `/api/users/campsites`
         );
 
         await setCampsites({ data: res.data });

@@ -30,8 +30,10 @@ function RegisterModal(props) {
   const submitHandler = async (e) => {
     e.preventDefault();
 
+    //dev mode: http://localhost:5000
+
     try {
-      const res = await fetch(`http://localhost:5000/api/users`, {
+      const res = await fetch(`/api/users`, {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {

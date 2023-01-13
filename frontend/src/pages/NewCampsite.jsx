@@ -64,11 +64,13 @@ function NewCampsite() {
     });
   };
 
+//dev mode: http://localhost:5000
+
   const submitHandler = async (e) => {
     e.preventDefault();
 
     try {
-      const res = axios.post(`http://localhost:5000/api/users/campsites`, {
+      const res = axios.post(`/api/users/campsites`, {
         id: id,
         name: name,
         location: location,

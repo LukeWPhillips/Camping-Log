@@ -25,11 +25,13 @@ function Campsite() {
 
   const navigate = useNavigate();
 
+  //dev mode: http://localhost:5000
+
   const onClick = async () => {
     if (isLoggedIn === true && user._id === listing.id) {
       try {
         const res = await axios.delete(
-          `http://localhost:5000/api/users/campsites/${listing._id}`,
+          `/api/users/campsites/${listing._id}`,
           {
             headers: {
               "Content-Type": "application/json",
