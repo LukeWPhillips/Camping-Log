@@ -35,9 +35,7 @@ function Profile() {
     setLoading(true);
     const getData = async (token) => {
       try {
-        const res = await axios.get(
-          `/api/users/campsites`
-        );
+        const res = await axios.get(`/api/users/campsites`);
 
         await setCampsites({ data: res.data });
         setLoading(false);
