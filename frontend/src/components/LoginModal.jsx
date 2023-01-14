@@ -36,7 +36,7 @@ function LoginModal(props, user) {
 
     try {
       const response = await axios.post(
-        `/api/users/login`,
+        `http://localhost:5000/api/users/login`,
         {
           email: email,
           password: password,

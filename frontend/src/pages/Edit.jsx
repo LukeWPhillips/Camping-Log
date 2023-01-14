@@ -68,11 +68,9 @@ function Edit() {
   const submitHandler = async (e) => {
     e.preventDefault();
 
-    //dev mode: http://localhost:5000
-
     try {
       const res = await axios.put(
-        `/api/users/campsites/${listing._id}`,
+        `http://localhost:5000/api/users/campsites/${listing._id}`,
         {
           name: name,
           location: location,
